@@ -40,9 +40,16 @@ header>img{
 }
 
 .navbar>a{
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     color: #000;
+}
+
+.navbar>a:hover{
+    padding: 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
 }
 
 /*MAIN SECTION OF THE WEBSITE*/
@@ -50,6 +57,9 @@ main{
     background: radial-gradient(62.37% 62.37% at 49.94% 46.76%, #47b0c8 0%, rgba(8, 59, 71, 0) 100%);
     background-repeat: no-repeat;
     background-size: cover;
+}
+main h1{
+    padding: 45px;
 }
 .main-home{
     background: radial-gradient(62.37% 62.37% at 49.94% 46.76%, #47b0c8 0%, rgba(8, 59, 71, 0) 100%);
@@ -59,6 +69,7 @@ main{
     grid-template-columns: repeat(2, 1fr);
     grid-column-start: 50px;
 }
+/*HOMEPAGE*/
 
 /*LEFT PART*/
 .main-side{
@@ -112,14 +123,19 @@ h1{
     border: none;
 }
 
-button>a{
-    text-decoration: none;
-    
-}
 
-button, button>a{
+button{
     background-color: #6d6670;
     color: #8added;
+    border-radius: 10px;
+    padding: 20px 40px;
+    border: none;
+}
+
+button>a{
+    background-color: #6d6670;
+    color: #8added;
+    text-decoration: none;
 }
 
 button:hover, button>a:hover{
@@ -189,10 +205,57 @@ footer p{
 
 .follow{
     position: relative;
-    right: 45px;
+    
 }
 
 .para{
     position: relative;
     top: 30px;
+}
+
+/*CONTACT PAGE*/
+
+.form{
+    padding: 30px;
+    margin: 5px 250px;
+}
+
+.my-form{
+    padding: 120px 40px;
+    background-color: #ffffff7d;
+    border: 1px solid #0000007d;
+    border-radius: 25px;
+    position: relative;
+    bottom: 45px;
+}
+
+.my-form>a{
+    position: relative;
+    top: 70px;
+}
+
+
+label{
+    padding: 25px;
+}
+
+#firstName, #lastName,#email{
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.5px solid #0000007d;
+}
+
+.u-input{
+    position: relative;
+    right: 285px;
+    padding: 15px;
+}
+
+.u-inputs{
+    position: relative;
+    right: 300px;
+}
+
+.text{
+    padding: 15px;
 }
