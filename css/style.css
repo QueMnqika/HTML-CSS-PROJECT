@@ -61,6 +61,12 @@ main{
 main h1{
     padding: 45px;
 }
+
+main h2{
+    padding: 45px;
+    font-size: 2.5em;
+}
+
 .main-home{
     background: radial-gradient(62.37% 62.37% at 49.94% 46.76%, #47b0c8 0%, rgba(8, 59, 71, 0) 100%);
     background-repeat: no-repeat;
@@ -258,4 +264,38 @@ label{
 
 .text{
     padding: 15px;
+}
+
+/*TESTIMONIAL PAGE*/
+
+.people{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    margin: 10px 40px;
+}
+
+.people img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.box h2{
+    padding: 25px;
+}
+
+.box{
+    margin: 20px;
+    padding: 60px;
+    border: 1px solid #0000007d;
+    border-radius: 15px;
+}
+
+.box:hover{
+    margin: 25px;
+    padding: 70px;
+    border: 1px solid #0000007d;
+    border-radius: 15px;
+    background-color: #ffffff90;
 }
