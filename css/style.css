@@ -26,17 +26,22 @@ header{
     justify-content: space-between;
     background-color: var(--primaryColor);
     border-bottom: 1px solid #757575;
+    padding-bottom: 120px;
 }
 
 header>img{
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: flip 5s infinite;
     width: 130px;
 
 }
 
+
 .navbar{
     position: relative;
-    top: 42px;
-    right: 15px;
+    top: 58px;
+    right: -750px;
 }
 
 .navbar>a{
@@ -304,6 +309,41 @@ label{
 
 /*ABOUT PAGE*/
 
+.test-header{
+    padding-bottom: 120px;
+}
+
+.logo{
+    display: flex;
+
+}
+
+.logo img{
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: flip 5s infinite;
+    width: 130px;
+}
+
+.navbar-testi{
+    position: relative;
+    top: 58px;
+    left: -42px;
+}
+
+.navbar-testi>a{
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-testi>a:hover{
+    padding: 25px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+}
+
 .about{
     border-radius: 15px;
     margin-top: 45px;
@@ -346,4 +386,19 @@ label{
 
 .about ul{
     padding: 20px;
+}
+
+
+
+/*KEYFRAMES*/
+@keyframes flip{
+    0%{
+        transform: rotateY(0deg);
+    }
+    75%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
 }
