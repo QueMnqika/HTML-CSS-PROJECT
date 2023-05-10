@@ -65,6 +65,8 @@ main h1{
 main h2{
     padding: 45px;
     font-size: 2.5em;
+    position: relative;
+    top: 15px;
 }
 
 .main-home{
@@ -78,9 +80,6 @@ main h2{
 /*HOMEPAGE*/
 
 /*LEFT PART*/
-.main-side{
-
-}
 
 .main-pic{
     width: 100%;
@@ -109,7 +108,7 @@ h1{
 }
 
 .intro, h3{
-    padding: 25px;
+    padding: 15px;
     margin: 10px;
 }
 
@@ -151,6 +150,7 @@ button:hover, button>a:hover{
 }
 
 /*TESTIMONIAL STYLE*/
+
 .testimonies img{
     width: 100px;
     border-radius: 50%;
@@ -277,11 +277,13 @@ label{
 }
 
 .people img{
-    width: 100px;
+    width: 250px;
     border-radius: 50%;
 }
 
 .box h2{
+    position: relative;
+    bottom: 25px;
     padding: 25px;
 }
 
@@ -298,4 +300,50 @@ label{
     border: 1px solid #0000007d;
     border-radius: 15px;
     background-color: #ffffff90;
+}
+
+/*ABOUT PAGE*/
+
+.about{
+    border-radius: 15px;
+    margin-top: 45px;
+    padding: 15px 90px;
+}
+
+.about li{
+    list-style: none;
+}
+
+.about div{
+    border: 1px solid #0000007d;
+    border-radius: 20px;
+    margin: 15px;
+}   
+
+.awards>div{
+    border: none;
+}
+
+.certificates{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px; 
+}
+
+.certificates>.cards{
+    padding: 15px;
+    border: none;
+}
+
+.certificates img{
+    width: 285px;
+    padding: 5px;
+}
+
+.about p{
+    padding: 10px 125px;
+}
+
+.about ul{
+    padding: 20px;
 }
