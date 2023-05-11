@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Home</title>
 </head>
 <body>
@@ -23,16 +24,16 @@
         </nav>
     </header>
 
-    <main class="main-home">
+    <main class="main-home row">
         <!--CONTENT-->
 
         <!--LEFT PART-->
-        <div class="main-side">
+        <div class="main-side col img-fluid">
             <img src="https://i.postimg.cc/4yjmhX38/c12-qaqambile-mnqika-1-removebg-preview-1.png" alt="Profile photo" class="main-pic" loading="lazy">
         </div>
 
         <!--RIGHT PART-->
-        <div class="main-section">
+        <div class="main-section col-6">
 
             <!--NAME AND DESCRIPTION-->
             <div class="intro">
@@ -40,7 +41,7 @@
                     <h1>QAQAMBILE MNQIKA</h1>
                     <small style="text-decoration: solid; font-weight: bold;">Aspiring Software Developer/Data Analyst</small>
                 </div>
-                <p><i>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus nisi officiis? Iusto ipsa in at harum nisi. Ipsum eveniet deserunt dicta! Vero consectetur dicta tempore inventore quasi odio soluta!</i></p>
+                <p><i>As an aspiring software developer, I began teaching myself coding during the COVID-19 pandemic in 2020. I then had the opportunity to join Life Choices Academy's Full Stack Development course, where I developed a passion for creating innovative solutions through code. My dedication and willingness to learn make me an excellent candidate for any software development position.</i></p>
             </div>
             <hr>
 
@@ -48,7 +49,7 @@
             <div class="container">
                 <h3>ABOUT ME</h3>
                     <div class="abouts">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit blanditiis dolore dolor quidem distinctio, aliquid alias ullam dolorem tenetur aut similique quis quaerat eligendi error quibusdam deserunt earum quasi ipsam?</p>
+                        <p>As a hardworking and dedicated individual with a passion for software development, I am driven to constantly improve my skills and knowledge. With a strong ability to work both independently and collaboratively, I am a valuable team member who is committed to delivering high-quality work. As someone who taught myself to code in 2020, I am constantly seeking new challenges and opportunities to grow as a software developer. I am excited to bring my passion, drive, and skills to a team where I can make a meaningful impact and contribute to innovative solutions.</p>
                         <a href="./about.html"><button>READ MORE</button></a>
                     </div>
             </div>
@@ -57,8 +58,8 @@
             <!--SKILLS SECT-->
             <div class="container">
                 <h3>SKILLS</h3>
-                <div class="skills">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto aut ea ipsum veritatis ab fugiat illum inventore alias, consequuntur, velit quaerat eius recusandae non culpa doloribus dolor iure aliquid illo.</p>
+                <div class="skill">
+                    <p>I have a diverse set of skills that includes photography, front-end development technologies such as HTML, CSS, and Bootstrap, as well as programming languages like Python. Additionally, I am proficient in using Microsoft Excel and Word, which enables me to analyze data and create professional documents. My passion for creativity and problem-solving drives me to continually improve my skills and learn new ones.</p>
                     <a href="./skills.html"></href><button>READ MORE</button></a>
                 </div>
             </div>
@@ -67,11 +68,11 @@
             <!--TESTIMONIES SECT-->
             <div class="container">
                 <h3>TESTIMONIES</h3>
-                <div class="testimonies">
+                <div class="testimonies img-fluid">
                     <img src="https://i.postimg.cc/gcxSD98K/C12-Siyamthanda-Mazokwana-2.jpg" alt="testimony-1" loading="lazy">
                     <br>
                     <p><i>"I had the pleasure of working with Que Mnqika on a coding project, and I must say that I was impressed with his skills and ability to learn on his own. As someone who is his peer, I can tell you that Que's dedication and passion for coding are unmatched. He is a fast learner, and his attention to detail is impeccable."</i></p>
-                    <a href="./testimonial.html"></a><button>READ MORE</button></a>
+                    <a href="./testimonial.html"><button>READ MORE</button></a>
                 </div>
             </div>
             <hr>
@@ -79,16 +80,20 @@
             <!--PROJECTS SECT-->
             <div class="container">
                 <h3>PROJECTS</h3>
-                <div class="projects">
-                    <div class="cards">
-                        <img src="https://i.postimg.cc/j26b7q9X/icons8-github-96-removebg-preview-removebg-preview.png" alt="project-icon" loading="lazy">
-                        <br>
-                        <a href="#">PROJECT 1</a>
+                <div class="projects img-fluid">
+                    <div class="home-proj img-fluid">
+                        <a href="https://superb-lebkuchen-570323.netlify.app/">
+                            <img src="https://i.postimg.cc/wTKr20yv/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-sta.png" alt="project-icon" loading="lazy">
+                            <br>
+                            <h3>PROJECT 1</h3>
+                        </a>
                     </div>
-                    <div class="cards">
-                        <img src="https://i.postimg.cc/j26b7q9X/icons8-github-96-removebg-preview-removebg-preview.png" alt="project-icon" loading="lazy">
-                        <br>
-                        <a href="#">PROJECT 2</a>
+                    <div class="home-proj img-fluid">
+                        <a href="https://poetic-custard-9b1e27.netlify.app/">
+                            <img src="https://i.postimg.cc/wTKr20yv/icons8-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-sta.png" alt="project-icon" loading="lazy">
+                            <br>
+                            <h3>PROJECT 2</h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -99,14 +104,15 @@
         <!--FOOTER-->
         <div class="f-details">
             <p class="para">COPYRIGHT 2023 &copy;</p>
-            <div class="socials">
+            <div class="socials img-fluid">
                 <p class="follow">FOLLOW ME ON SOCIAL MEDIA:</p>
                 <a href="https://linkedin.com/"><img src="https://i.postimg.cc/gctbX5n8/icons8-linkedin-100-removebg-preview.png" alt="LinkedIn" loading="lazy"></a>
                 <a href="https://github.com/QueMnqika"><img src="https://i.postimg.cc/j26b7q9X/icons8-github-96-removebg-preview-removebg-preview.png" alt="Github" loading="lazy"></a>
-                <a href="https://facebook.com/Que+Sikelela-Mnqika"><img src="https://i.postimg.cc/rsVyVtZT/icons8-facebook-100-removebg-preview.png" alt="Facebook" loading="lazy"></a>
+                <a href="./test.html"><img src="https://i.postimg.cc/rsVyVtZT/icons8-facebook-100-removebg-preview.png" alt="Facebook" loading="lazy"></a>
             </div>
             <p class="para"><i>DEVELOPED BY QUE-M</i></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -20,6 +20,11 @@ body{
     text-align: center;
 }
 
+
+a:visited{
+    color: #000;
+}
+
 /*HEADER + NAVBAR STYLING*/
 header{
     display: flex;
@@ -65,6 +70,7 @@ main{
 }
 main h1{
     padding: 45px;
+    text-shadow: 3px 3px 3px #0000007d;
 }
 
 main h2{
@@ -72,16 +78,19 @@ main h2{
     font-size: 2.5em;
     position: relative;
     top: 15px;
+    left: 610px;
+    text-shadow: 3px 3px 3px #0000007d;
 }
 
-.main-home{
+/* .main-home{
     background: radial-gradient(62.37% 62.37% at 49.94% 46.76%, #47b0c8 0%, rgba(8, 59, 71, 0) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-start: 50px;
-}
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr); */
+    /* grid-column-start: 50px; */
+/* } */
 /*HOMEPAGE*/
 
 /*LEFT PART*/
@@ -91,6 +100,8 @@ main h2{
     position: sticky;
     left: -70px;
     top: 0;
+    grid-column-start: 0;
+    grid-column-end: 1;
 }
 
 /*RIGHT PART*/
@@ -152,6 +163,7 @@ button:hover, button>a:hover{
     background-color: #242121;
     color: #fff;
     box-shadow: 0px 0px 5px #565656;
+    cursor: pointer;
 }
 
 /*TESTIMONIAL STYLE*/
@@ -180,6 +192,16 @@ button:hover, button>a:hover{
     padding: 35px;
     border: 1px solid #000;
     border-radius: 10px;
+}
+
+.home-proj, .home-proj a{
+    text-decoration: none;
+    color: #000
+}
+
+.home-proj:hover{
+    background-color: #ffffff8d;
+    
 }
 
 .cards a{
@@ -212,6 +234,8 @@ footer p{
 
 .socials img{
     width: 60px;
+    position: relative;
+    left: 60px;
 }
 
 .follow{
@@ -232,12 +256,32 @@ footer p{
 }
 
 .my-form{
-    padding: 120px 40px;
+    padding: 30px 40px;
     background-color: #ffffff60;
     border: 1px solid #0000007d;
     border-radius: 25px;
     position: relative;
     bottom: 45px;
+    box-shadow: 0px 0px 5px #00000059;
+}
+
+.my-form button{
+    position: relative;
+    left: 350px;
+    bottom: 60px;
+}
+
+.my-form:hover{
+    padding: 30px 40px;
+    background-color: #ffffff60;
+    border: 1px solid #0000007d;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px #000;
+}
+
+input:hover{
+    box-shadow: 0px 0px 3px #000;
+    cursor: pointer;
 }
 
 .my-form>a{
@@ -258,13 +302,13 @@ label{
 
 .u-input{
     position: relative;
-    right: 285px;
+    right: 14px;
     padding: 15px;
 }
 
 .u-inputs{
     position: relative;
-    right: 300px;
+    right: 13px;
 }
 
 .text{
@@ -284,6 +328,8 @@ label{
 .people img{
     width: 250px;
     border-radius: 50%;
+    position: relative;
+    left: 150px;
 }
 
 .box h2{
@@ -297,14 +343,24 @@ label{
     padding: 60px;
     border: 1px solid #0000007d;
     border-radius: 15px;
+    box-shadow: 0px 0px 5px #00000061;
 }
 
 .box:hover{
-    margin: 25px;
-    padding: 70px;
+    margin: 20px;
+    padding: 60px;
     border: 1px solid #0000007d;
     border-radius: 15px;
     background-color: #ffffff90;
+    box-shadow: 0px 0px 20px #000000c6;
+}
+
+.box h3{
+    text-align: center;
+}
+
+.box:hover img{
+    box-shadow: 0px 0px 5px #000000c6;
 }
 
 /*ABOUT PAGE*/
@@ -355,29 +411,42 @@ label{
 }
 
 .about div{
+    box-shadow: 0px 0px 5px #000000c6;
     border: 1px solid #0000007d;
     border-radius: 20px;
-    margin: 15px;
+    margin: 15px 50px;
+    padding: 25px;
+}
+
+.about div:hover{
+    box-shadow: 0px 0px 15px #000000c6;
+    border: 1px solid #0000007d;
+    border-radius: 20px;
+    margin: 15px 50px;
+    padding: 25px;
+    background-color: #0000007c;
+    color: #fff;
+    text-shadow: 1px 1px 3px #ffffff88;
 }   
 
 .awards>div{
     border: none;
 }
 
-.certificates{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px; 
-}
 
-.certificates>.cards{
+.cards{
     padding: 15px;
+    margin: 5px 210px;
     border: none;
 }
 
-.certificates img{
-    width: 285px;
+.cards img{
+    width: 400px;
     padding: 5px;
+}
+
+.cards:hover img{
+    width: 550px;
 }
 
 .about p{
@@ -386,6 +455,35 @@ label{
 
 .about ul{
     padding: 20px;
+}
+
+.bio{
+    position: relative;
+    bottom: 60px;
+}
+
+.personal-details a, .personal-details b{
+    text-decoration: none;
+    color: #000;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.g-skills{
+   position: relative;
+   bottom: 10px;
+}
+
+.COM-logo{
+    background-color: #e8e8e8;
+    border-radius: 5%;
+}
+
+.COM{
+    position: relative;
+    bottom: 15px;
 }
 
 /*PROJECTS PAGE*/
@@ -403,6 +501,34 @@ label{
     margin: 10px 85px;
     padding: 35px 70px;
     border-radius: 15px;
+    box-shadow: 0px 0px 5px #0000006a;
+}
+
+.proj-box:hover{
+    border: 1px solid #0000007d;
+    margin: 10px 85px;
+    padding: 35px 70px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #000000af;
+    background-color: #ffffff7d;
+}
+
+.proj-box img{
+    position: relative;
+    left: 150px;
+}
+
+.proj-box:hover button{
+    box-shadow: 0px 0px 8px #000000;
+}
+
+.proj-btn{
+    position: relative;
+    left: 50px;
+}
+
+.proj-btn button{
+    border-radius: 15px;
 }
 
 .proj-btn2{
@@ -414,6 +540,52 @@ label{
     position: relative;
     left: 70px;
 }
+
+/*SKILLS PAGE*/
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10px;
+    text-shadow: 1px 1px 1px #ffffff7d;
+}
+
+.skill-main h2{
+    text-shadow: 3px 3px 4px #3b3b3b7d;
+}
+
+.skill-box{
+    border: 1px solid #0000007d;
+    margin: 5px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #00000047;
+    text-align: center;
+}
+
+.skill-box:hover{
+    border: 1px solid #0000007d;
+    margin: 5px;
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #ffffff8e;
+    box-shadow: 0px 0px 10px #000000ba;
+    text-shadow: 1px 1px 1px #00000061;
+}
+
+.skill-box img{
+    position: relative;
+    left: 5px;
+}
+
+.bootstrap{
+    position: relative;
+    top: 20px;
+}
+
+
+
 
 
 
