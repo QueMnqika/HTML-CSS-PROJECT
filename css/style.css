@@ -388,6 +388,33 @@ label{
     padding: 20px;
 }
 
+/*PROJECTS PAGE*/
+
+.project-body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px ;
+    margin: 25px;
+}
+
+.proj-box{
+    border: 1px solid #0000007d;
+    margin: 10px 85px;
+    padding: 35px 70px;
+    border-radius: 15px;
+}
+
+.proj-btn2{
+    position: relative;
+    right: 70px;
+}
+
+.proj-btn1{
+    position: relative;
+    left: 70px;
+}
+
 
 
 /*KEYFRAMES*/
