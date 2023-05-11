@@ -601,3 +601,42 @@ label{
         transform: rotateY(360deg);
     }
 }
+
+
+/*MEDIA QUERIES*/
+
+/*DESKTOP*/
+@media (min-width: 993px) and (max-width: 1200px) {
+    
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header>img{
+        display: flex;
+        flex-direction: column;
+        width: 95px;
+    }
+    
+    .navbar{
+        position: relative;
+        right: -100px;
+        top: 110px;
+    }
+}
+
+/*CELLPHONE*/
+@media (max-width: 767px)  {
+    header>img{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 95px;
+    }
+    
+    .navbar{
+        position: relative;
+        right: 8px;
+        top: 110px;
+    }
+}
