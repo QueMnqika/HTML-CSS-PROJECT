@@ -640,32 +640,76 @@ label{
     
     .navbar{
         position: relative;
-        font-size: 13px;
+        font-size: 9px;
         top: 125px;
-        left: 13px;
+        left: 95px;
         padding: 5px;
     }
 
     .navbar>a{
         display: block;
-
+        padding: 10px;
     }
 
     .screen-main{
         display: inline-block;
         justify-content: center;
     }
+
+    .about{
+        padding: 0px;
+    }
+
+    .skills{
+        display: inline-block;
+    }
+
+    .education:hover{
+        margin: 0;
+        padding: 0;
+    }
+
+    .education h1 h3{
+        font-size: 1.5rem;
+    }
+
+    .edu-box img{
+        width: 50px;
+        padding: 5px;
+    }
+
+    .about div>.edu-box:hover{
+        margin: 0;
+        padding: 0;
+    }
+
+    .awards img, .cards:hover>img{
+        width: 180px;
+    }
+
+    .awards img:hover{
+        width: 300px;
+    }
 }
 
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 590px) {
     body{
         font-size: 12px;
     }
 
+    .navbar{
+        width: 300px;
+    }
+
     .navbar a{
         position: relative;
-        right: 25px;
+        right: 95px;
+    }
+
+    .navbar a:hover{
+        background-color: #ffffff59;
+        padding: 5px;
     }
 
     .main-pic{
@@ -716,14 +760,113 @@ label{
         position: relative;
     }
 
-    footer{
-        position: relative;
-        right: -7px;
-    }
+    
 
     /*about*/
 
-    .about img{
-        display: none;
+    .about, .about p{
+        padding: 0px;
     }
+
+    .about div{
+        margin: 15px 40px;
+        padding: 17px 19px;
+    }
+
+    .about .edu-box {
+        margin: 15px 0px;
+        padding: 17px 19px;
+    }
+
+    .personal-details p{
+        font-size: 10px;
+        position: relative;
+        right: 8px;
+    }
+
+    .skills{
+        display: inline-block;
+    }
+    .education:hover{
+        margin: 0;
+        padding: 0;
+    }
+
+    .education{
+        padding: 5px;
+    }
+
+    .education h1 h3{
+        font-size: 1.5rem;
+    }
+
+    .edu-box img{
+        width: 50px;
+    }
+
+    .edu-box h3{
+        font-size: 1rem;
+    }
+
+    .thera{
+        position: relative;
+        right: 6px;
+    }
+
+    .about div>.edu-box:hover{
+        margin: 0;
+        padding: 0;
+    }
+
+    .awards img{
+        width: 70px;
+    }
+
+/* skills */
+    .skill-grid{
+        display: inline-block;
+    }
+
+/* project */
+
+    .project-body{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+
+    .proj-btn1{
+        position: relative;
+        left: -90px;
+        padding: 10px;
+    }
+
+    .proj-box img {
+        position: relative;
+        left: 70px;
+    }
+
+    .proj-btn{
+        position: relative;
+        left: 32px;
+    }
+
+    .proj-btn2{
+        position: relative;
+        padding: 10px;
+        right: 90px;
+    }
+
+    footer .socials{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+
+    footer a{
+        position: relative;
+        right: 59px;
+    }
+
 }
