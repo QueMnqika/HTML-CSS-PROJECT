@@ -111,6 +111,10 @@ main h2{
     border-left: 1px solid #4c4c4c;
 }
 
+.intro{
+    margin: 0;
+}
+
 /*INTRO SECTION*/
 .heading{
     padding-bottom: 20px;
@@ -605,13 +609,29 @@ label{
 
 /*MEDIA QUERIES*/
 
-/*DESKTOP*/
-@media (min-width: 993px) and (max-width: 1200px) {
-    
+/* Desktop */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .navbar{
+        position: relative;
+        top: 120px;
+        left: 5%;
+        font-size: 0.85rem;
+        font-size: 14px;
+    }
 }
+
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 300px) and (max-width: 700px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-size: 12px;
+    }
+
     header>img{
         display: flex;
         flex-direction: column;
@@ -620,23 +640,90 @@ label{
     
     .navbar{
         position: relative;
-        right: -100px;
-        top: 110px;
+        font-size: 13px;
+        top: 125px;
+        left: 13px;
+        padding: 5px;
+    }
+
+    .navbar>a{
+        display: block;
+
+    }
+
+    .screen-main{
+        display: inline-block;
+        justify-content: center;
     }
 }
 
-/*CELLPHONE*/
-@media (max-width: 767px)  {
-    header>img{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 95px;
+
+@media screen and (max-width: 510px) {
+    body{
+        font-size: 12px;
     }
-    
-    .navbar{
+
+    .navbar a{
         position: relative;
-        right: 8px;
-        top: 110px;
+        right: 25px;
+    }
+
+    .main-pic{
+        position: absolute;
+        display: none;
+        
+    }
+
+    main>h1, .heading{
+        text-align: center;
+        font-size: 13px;
+        position: relative;
+        left: 15px;
+    }
+
+    .heading{
+        position: relative;
+        left: -35px;
+    }
+
+    .col-7{
+        width: 50.33333333%;
+        border: none;
+    }
+
+    .col-7 h1{
+        position: relative;
+        right: 10px;
+    }
+
+
+    .projects{
+        display: inline-block;
+    }
+
+    .intro, .container{
+        position: relative;
+        left: -90px;
+    }
+
+    small{
+        position: relative;
+        right: -30px;
+    }
+
+    .main-home{
+        border: none;
+        position: relative;
+    }
+
+    footer{
+        position: relative;
+        right: -7px;
+    }
+
+    /*about*/
+
+    .about img{
+        display: none;
     }
 }
