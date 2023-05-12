@@ -43,19 +43,19 @@ header>img{
 }
 
 
-.navbar{
+.navig{
     position: relative;
     top: 58px;
     right: -750px;
 }
 
-.navbar>a{
+.navig>a{
     padding: 20px;
     text-decoration: none;
     color: #000;
 }
 
-.navbar>a:hover{
+.navig>a:hover{
     padding: 25px;
     text-decoration: none;
     color: #fff;
@@ -260,6 +260,7 @@ footer p{
 }
 
 .my-form{
+    flex-direction: column;
     padding: 30px 40px;
     background-color: #ffffff60;
     border: 1px solid #0000007d;
@@ -271,7 +272,7 @@ footer p{
 
 .my-form button{
     position: relative;
-    left: 350px;
+    left: 650px;
     bottom: 60px;
 }
 
@@ -304,19 +305,10 @@ label{
     border: 0.5px solid #0000007d;
 }
 
-.u-input{
-    position: relative;
-    right: 14px;
-    padding: 15px;
-}
-
-.u-inputs{
-    position: relative;
-    right: 13px;
-}
 
 .text{
     padding: 15px;
+    margin: 20px;
 }
 
 /*TESTIMONIAL PAGE*/
@@ -370,7 +362,7 @@ label{
 /*ABOUT PAGE*/
 
 .test-header{
-    padding-bottom: 120px;
+    padding-bottom: 0px;
 }
 
 .logo{
@@ -385,19 +377,21 @@ label{
     width: 130px;
 }
 
-.navbar-testi{
+
+
+.navig .nv{
     position: relative;
     top: 58px;
     left: -42px;
 }
 
-.navbar-testi>a{
+.navig .nv>a{
     padding: 20px;
     text-decoration: none;
     color: #000;
 }
 
-.navbar-testi>a:hover{
+.navig .nv>a:hover{
     padding: 25px;
     text-decoration: none;
     color: #fff;
@@ -611,13 +605,13 @@ label{
 
 /* Desktop */
 @media screen and (min-width: 700px) and (max-width: 1200px) {
-    .navbar{
+    /* .navig{
         position: relative;
         top: 120px;
         left: 5%;
         font-size: 0.85rem;
         font-size: 14px;
-    }
+    } */
 }
 
 
@@ -638,17 +632,27 @@ label{
         width: 95px;
     }
     
-    .navbar{
+    .navig{
         position: relative;
         font-size: 9px;
         top: 125px;
-        left: 95px;
+        left: 140px;
         padding: 5px;
+        width: 300px;
     }
 
-    .navbar>a{
+    .bar{
+        position: relative;
+        font-size: 9px;
+        top: 125px;
+        left: -290px;
+        padding: 5px;
+        width: 300px;
+    }
+
+    .navig>a{
         display: block;
-        padding: 10px;
+        padding: 10px 0px;
     }
 
     .screen-main{
@@ -690,6 +694,60 @@ label{
     .awards img:hover{
         width: 300px;
     }
+
+    .project-body{
+        display: inline-block;
+        position: relative;
+        left: 15px;
+    }
+
+    .proj-btn1{
+        position: relative;
+        left: -90px;
+        padding: 10px;
+    }
+
+    .proj-box img {
+        position: relative;
+        left: 70px;
+    }
+
+    .proj-btn{
+        position: relative;
+        left: 32px;
+    }
+
+    .proj-btn2{
+        position: relative;
+        padding: 10px;
+        right: 90px;
+    }
+
+
+
+
+    .my-form{
+        margin: 10px;
+        padding: 30px 90px;
+        font-size: 12px;
+    }
+
+    .my-form button{
+        position: relative;
+        left: 220px;
+        bottom: 60px;
+    }
+
+    .people{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .people img{
+        position: relative;
+        left: 115px;
+        width: 150px;
+    }
 }
 
 
@@ -698,19 +756,36 @@ label{
         font-size: 12px;
     }
 
-    .navbar{
+    .navig{
+        position: relative;
+        font-size: 9px;
+        top: 125px;
+        left: 140px;
+        padding: 5px;
         width: 300px;
     }
 
-    .navbar a{
+    .nv{
         position: relative;
-        right: 95px;
+        left: 140px;
+        text-align: start;
     }
 
-    .navbar a:hover{
+    .navig a{
+        position: relative;
+        right: 130px;
+    }
+
+    .navig>a {
+        display: block;
+        padding: 10px 0px;
+    }
+
+    .navig a:hover{
         background-color: #ffffff59;
         padding: 5px;
     }
+
 
     .main-pic{
         position: absolute;
@@ -722,7 +797,7 @@ label{
         text-align: center;
         font-size: 13px;
         position: relative;
-        left: 15px;
+        left: -14px;
     }
 
     .heading{
@@ -832,18 +907,23 @@ label{
     .project-body{
         display: inline-block;
         position: relative;
-        left: 15px;
+        left: 40px;
     }
 
     .proj-btn1{
         position: relative;
-        left: -90px;
+        left: -133px;
         padding: 10px;
     }
 
     .proj-box img {
         position: relative;
         left: 70px;
+    }
+
+    .proj-box:hover{
+        padding: 20px;
+
     }
 
     .proj-btn{
@@ -854,15 +934,48 @@ label{
     .proj-btn2{
         position: relative;
         padding: 10px;
-        right: 90px;
+        right: 133px;
     }
+
+    /*contact*/
+
+    .my-form{
+        margin: 10px;
+        padding: 30px 90px;
+    }
+
+    .my-form button{
+        position: relative;
+        left: 100px;
+        bottom: 60px;
+        
+    }
+
+    .my-form a{
+        text-decoration: none;
+    }
+
+    .people{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .people img{
+        position: relative;
+        left: 30px;
+        width: 150px;
+    }
+
+
+    /*footer*/
 
     footer .socials{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        font-size: 15px;
+        font-size: 10px;
     }
+
 
     footer a{
         position: relative;
